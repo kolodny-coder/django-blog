@@ -26,7 +26,7 @@ SECRET_KEY = '=f=5_5aazpxmwx&2mvl@s$4x$j%klz855u8wv3g9i%y@3@$z+h'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['dandjangoblog.herokuapp.com']
 
 
 # Application definition
