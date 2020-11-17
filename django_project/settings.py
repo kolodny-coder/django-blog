@@ -22,12 +22,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '=f=5_5aazpxmwx&2mvl@s$4x$j%klz855u8wv3g9i%y@3@$z+h'
-
+# SECRET_KEY = '=f=5_5aazpxmwx&2mvl@s$4x$j%klz855u8wv3g9i%y@3@$z+h'
+SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# ALLOWED_HOSTS = ['dandjangoblog.herokuapp.com',  '127.0.0.1']
+ALLOWED_HOSTS = ['dandjangoblog.herokuapp.com']
 
 
 # Application definition
@@ -156,6 +156,8 @@ AWS_S3_SIGNATURE_VERSION = 's3v4'
 AWS_S3_REGION_NAME = 'eu-central-1'
 
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+
+print(SECRET_KEY)
 
 
 
