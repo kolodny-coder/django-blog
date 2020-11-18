@@ -12,5 +12,5 @@ The app platform unable for users to share and read Posts.
 2. User can upload a profile picture and update his Profile throw the profile tag in the navigation bar.
 
 # DataBase
-1. The profile pics stored in at s3 bucket.
+1. The profile pics stored in s3 bucket.
 2. The user data stored in the Postgres database
